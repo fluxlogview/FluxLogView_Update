@@ -1,0 +1,125 @@
+{
+  "build": 84,
+  "files": [
+    {
+      "path": "assets/html2canvas.esm-DTBFANbd.js",
+      "size": 201345,
+      "sha256": "15abc6774ecaed6a8435f794006b66c5475d14e61ce664f53718b10f2831e5d3",
+      "url": "assets/html2canvas.esm-DTBFANbd.js"
+    },
+    {
+      "path": "assets/index-BF5rjK8b.js",
+      "size": 1467,
+      "sha256": "88cdc30d0b62761b462ede0c0bc12a02eb13e209e8ff478bc79979ea04389718",
+      "url": "assets/index-BF5rjK8b.js"
+    },
+    {
+      "path": "assets/index-C5U6mKfT.js",
+      "size": 397,
+      "sha256": "4957434101aa4dea285704ab36e3325c2a6402689a30c81bedb3eb1fb0f92fa3",
+      "url": "assets/index-C5U6mKfT.js"
+    },
+    {
+      "path": "assets/index-CvI5mcIH.css",
+      "size": 72649,
+      "sha256": "4dc1c8dba62e4ea83557bff59a0ef28565dad7016bafed34475b89de638d42ed",
+      "url": "assets/index-CvI5mcIH.css"
+    },
+    {
+      "path": "assets/index-UprMbLf8.js",
+      "size": 1196135,
+      "sha256": "6feddf78e3cfc6227b1b2e69488db711eafbb97b76e98f3f1897f0ce05ffc58f",
+      "url": "assets/index-UprMbLf8.js"
+    },
+    {
+      "path": "assets/index.es-ihtoNRGp.js",
+      "size": 159352,
+      "sha256": "5345ddd1f364a05632358a2773cdc72791011a4cc8514f69b338e20e3ff345c0",
+      "url": "assets/index.es-ihtoNRGp.js"
+    },
+    {
+      "path": "assets/JsBarcode-BEt8cbiF.js",
+      "size": 465,
+      "sha256": "9bd0bae953f06d6b784fe7ad1713263dd08a4cbd1facc7f2ae04102ad306dc96",
+      "url": "assets/JsBarcode-BEt8cbiF.js"
+    },
+    {
+      "path": "assets/jspdf.es.min-O3qn8g75.js",
+      "size": 386899,
+      "sha256": "8c1405affb518878f0804dbed2e492c80f2cf4f396d53e0ef5cd361764570246",
+      "url": "assets/jspdf.es.min-O3qn8g75.js"
+    },
+    {
+      "path": "assets/jszip.min-CX9-Xd02.js",
+      "size": 97486,
+      "sha256": "f4ec5d63c67d1b12b8f533ac593b321dc36c73649c7ee4a178a31306f3547529",
+      "url": "assets/jszip.min-CX9-Xd02.js"
+    },
+    {
+      "path": "assets/pdf-DRVH8Mlf.js",
+      "size": 542269,
+      "sha256": "9320d932eee58160793c8678a991f2917779ff17896562affc1a5fcf93a1861c",
+      "url": "assets/pdf-DRVH8Mlf.js"
+    },
+    {
+      "path": "assets/pdf.worker.min-YUTla-j2.js",
+      "size": 93,
+      "sha256": "39b9febcdf9801f4a56f175f816a002201f624067e9283ab6a2743dc39feda8c",
+      "url": "assets/pdf.worker.min-YUTla-j2.js"
+    },
+    {
+      "path": "assets/purify.es-D55cVrIN.js",
+      "size": 28905,
+      "sha256": "a354f953e340c804c64fc3ac9e98361e859dc6ba072a1f658b558e712fccf67d",
+      "url": "assets/purify.es-D55cVrIN.js"
+    },
+    {
+      "path": "assets/RobotoFlex-Latin-PTBR-DALPZWKu.woff2",
+      "size": 159692,
+      "sha256": "3244db85418d37b876c69d0c3cc7be431174a32cb31a9d638a3f7aa44e4e5ab3",
+      "url": "assets/RobotoFlex-Latin-PTBR-DALPZWKu.woff2"
+    },
+    {
+      "path": "assets/RobotoFlex-Latin-PTBR-wh_-avxm.woff",
+      "size": 199552,
+      "sha256": "6a6de06330c3a41ad7935cb13cfebfcced840e3a7de9affb0edcabcb0089258a",
+      "url": "assets/RobotoFlex-Latin-PTBR-wh_-avxm.woff"
+    },
+    {
+      "path": "assets/supabase-5wBSeYWX.js",
+      "size": 214639,
+      "sha256": "bbc05b10b91f9209c9739a1455660aa885efcffb5e6925ac285ab07d2f0c0907",
+      "url": "assets/supabase-5wBSeYWX.js"
+    },
+    {
+      "path": "assets/vendor-BXeWq_LR.js",
+      "size": 68374,
+      "sha256": "ead7c2358a652331e1408f9873e6bfd9b273009e78a0311379b5ae4455df148d",
+      "url": "assets/vendor-BXeWq_LR.js"
+    },
+    {
+      "path": "assets/web-BsMf6FuK.js",
+      "size": 410,
+      "sha256": "284030f4e94398706fc73827fbab6c2f5a8f9d59276548f879c8a95d17851e14",
+      "url": "assets/web-BsMf6FuK.js"
+    },
+    {
+      "path": "assets/web-DXBfwDSj.js",
+      "size": 2014,
+      "sha256": "06ceb57892ceb4954d11542adef5ba8bc9fe57ff1887483e4b25b852c230f66c",
+      "url": "assets/web-DXBfwDSj.js"
+    },
+    {
+      "path": "assets/web-O-8XUaAs.js",
+      "size": 8799,
+      "sha256": "0d092a4458a32591ecbe4beafaddfbe6df4d5620ed6caf430f3640b8eb0ffa80",
+      "url": "assets/web-O-8XUaAs.js"
+    },
+    {
+      "path": "index.html",
+      "size": 10368,
+      "sha256": "0822c4a36e9962f51ff131b8592fa6a93ee094701c8d571a1a05c6df8219ea7e",
+      "url": "index.html"
+    }
+  ]
+}

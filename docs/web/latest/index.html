@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect x='1' y='1' width='4' height='14' rx='2' fill='%23047c00'/%3E%3Crect x='6' y='1' width='4' height='14' rx='2' fill='%23047c00'/%3E%3Crect x='11' y='1' width='4' height='14' rx='2' fill='%23f97316'/%3E%3C/svg%3E" type="image/svg+xml">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self' data:; media-src 'self' blob: data:; connect-src 'self' https://*.supabase.co wss://*.supabase.co ws://localhost:* ws://127.0.0.1:* http://localhost:* http://127.0.0.1:*; frame-src 'self' blob: data: about:; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'self'">
+    <title>FluxLogView</title>
+  <script type="module" crossorigin src="./assets/index-UprMbLf8.js"></script>
+  <link rel="modulepreload" crossorigin href="./assets/supabase-5wBSeYWX.js">
+  <link rel="stylesheet" crossorigin href="./assets/index-CvI5mcIH.css">
+</head>
+<body class="bg-zinc-50 dark:bg-[#0f0f12] min-h-screen font-sans text-zinc-800 dark:text-zinc-100 transition-colors duration-200">
+
+    <div id="toast-container" class="fixed top-6 left-0 right-0 flex flex-col items-center gap-2" style="z-index: 2147483647; pointer-events: none;"></div>
+    
+    <div id="login-container" class="login-bg fixed inset-0 flex items-center justify-center p-4 z-[100] transition-opacity duration-300">
+        <div id="login-screen" class="w-full max-w-sm p-6 bg-white dark:bg-[#16161a] border border-zinc-200 dark:border-zinc-800 rounded-2xl shadow-xl relative animate-in fade-in zoom-in duration-500">
+            <button data-action="alternarTema" class="absolute top-4 right-4 p-1.5 rounded-lg bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-300 hover:bg-zinc-200 dark:hover:bg-zinc-700 transition-all active:scale-95" title="Alternar Tema">
+                <span class="theme-toggle-icon"></span>
+            </button>
+            <div class="flex items-center justify-center mb-6">
+                <span class="flv-login-brand inline-flex items-center gap-2">
+                <svg class="flv-login-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 17" width="32" height="32" aria-hidden="true">
+                    <defs>
+                        <linearGradient id="flvGradVerde" x1="0" y1="0" x2="0" y2="1">
+                            <stop offset="0" stop-color="#0ab318"/>
+                            <stop offset="1" stop-color="#047c00"/>
+                        </linearGradient>
+                        <linearGradient id="flvGradLaranja" x1="0" y1="0" x2="0" y2="1">
+                            <stop offset="0" stop-color="#fb923c"/>
+                            <stop offset="1" stop-color="#ea580c"/>
+                        </linearGradient>
+                    </defs>
+                    <rect x="0.8" y="1" width="4.4" height="15" rx="2" fill="url(#flvGradVerde)"/>
+                    <rect x="6.3" y="1" width="4.4" height="15" rx="2" fill="url(#flvGradVerde)"/>
+                    <rect x="11.8" y="1" width="4.4" height="15" rx="2" fill="url(#flvGradLaranja)"/>
+                </svg>
+                <span class="flv-login-titulo text-2xl font-extrabold tracking-tight leading-none text-zinc-900 dark:text-white" title="FluxLogView">
+                    <span class="flv-titulo-nome"><span class="flv-letra flv-letra-sigla flv-letra-sigla-f" style="--i:1" data-text="F">F</span><span class="flv-letra flv-letra-num" style="--i:2" data-text="l">l</span><span class="flv-letra flv-letra-num" style="--i:3" data-text="u">u</span><span class="flv-letra flv-letra-num" style="--i:4" data-text="x">x</span><span class="flv-letra flv-letra-sigla flv-letra-sigla-l" style="--i:5" data-text="L">L</span><span class="flv-letra flv-letra-num" style="--i:6" data-text="o">o</span><span class="flv-letra flv-letra-num" style="--i:7" data-text="g">g</span><span class="flv-letra flv-letra-sigla flv-letra-sigla-v" style="--i:8" data-text="V">V</span><span class="flv-letra flv-letra-num" style="--i:9" data-text="i">i</span><span class="flv-letra flv-letra-num" style="--i:10" data-text="e">e</span><span class="flv-letra flv-letra-num" style="--i:11" data-text="w">w</span></span>
+                </span>
+                </span>
+            </div>
+            <form id="login-form" class="space-y-4">
+                <div>
+                    <label for="email" class="block text-[11px] font-bold uppercase tracking-widest text-zinc-400 dark:text-zinc-500 mb-1.5 ml-0.5">Nome de Usuário</label>
+                    <input type="text" id="email" required autocomplete="username" enterkeyhint="next" placeholder="Digite seu usuário..." class="w-full px-3 py-2.5 bg-zinc-50 dark:bg-[#222226] border border-zinc-200 dark:border-zinc-700 rounded-lg text-zinc-900 dark:text-white placeholder-zinc-400 dark:placeholder-zinc-600 focus:outline-none focus:ring-2 focus:ring-green-500/40 focus:border-green-500 transition-all text-sm">
+                </div>
+                <div>
+                    <label for="senha" class="block text-[11px] font-bold uppercase tracking-widest text-zinc-400 dark:text-zinc-500 mb-1.5 ml-0.5">Senha</label>
+                    <div class="flv-senha-wrapper">
+                        <input type="password" id="senha" required autocomplete="current-password" enterkeyhint="go" placeholder="••••••••" class="w-full px-3 py-2.5 bg-zinc-50 dark:bg-[#222226] border border-zinc-200 dark:border-zinc-700 rounded-lg text-zinc-900 dark:text-white placeholder-zinc-400 dark:placeholder-zinc-600 focus:outline-none focus:ring-2 focus:ring-green-500/40 focus:border-green-500 transition-all text-sm">
+                        <button type="button" id="btn-ver-senha" title="Mostrar senha" aria-label="Mostrar senha" tabindex="-1">
+                            <svg id="icone-ver-senha" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-4 h-4" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z" /><path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" /></svg>
+                            <svg id="icone-senha-off" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-4 h-4 hidden" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M3.98 8.223A10.477 10.477 0 0 0 1.934 12C3.226 16.338 7.244 19.5 12 19.5c.993 0 1.953-.138 2.863-.395M6.228 6.228A10.451 10.451 0 0 1 12 4.5c4.756 0 8.773 3.162 10.065 7.498a10.522 10.522 0 0 1-4.293 5.774M6.228 6.228 3 3m3.228 3.228 3.65 3.65m7.894 7.894L21 21m-3.228-3.228-3.65-3.65m0 0a3 3 0 1 0-4.243-4.243m4.242 4.242L9.88 9.88" /></svg>
+                        </button>
+                    </div>
+                    <div id="avisos-caps-lock" class="flv-caps-aviso" aria-live="polite">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-3.5 h-3.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126ZM12 15.75h.007v.008H12v-.008Z" /></svg>
+                        <span>Caps Lock ativado</span>
+                    </div>
+                </div>
+                <div class="flex items-center justify-between gap-3 pt-0.5">
+                    <label id="label-salvar-usuario" class="flex items-center gap-1.5 cursor-pointer select-none text-[11px] font-medium text-zinc-600 dark:text-zinc-400">
+                        <input type="checkbox" id="salvar-usuario" class="w-4 h-4 rounded accent-green-600 cursor-pointer" />
+                        <span>Salvar usuário</span>
+                    </label>
+                    <label id="label-manter-conectado" class="flex items-center gap-1.5 cursor-pointer select-none text-[11px] font-medium text-zinc-600 dark:text-zinc-400">
+                        <input type="checkbox" id="manter-conectado" class="w-4 h-4 rounded accent-green-600 cursor-pointer" />
+                        <span>Manter-me conectado</span>
+                    </label>
+                </div>
+                <button type="submit" id="btn-entrar" class="inline-flex items-center justify-center gap-2 w-full bg-green-600 hover:bg-green-700 text-white font-bold py-2.5 px-3 rounded-lg transition-all shadow-md shadow-zinc-900/10 active:scale-[0.98] mt-1 text-sm">
+                    <svg id="btn-entrar-spinner" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="w-4 h-4 animate-spin hidden" aria-hidden="true"><circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle><path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 0 1 8-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 0 1 4 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647Z"></path></svg>
+                    <span id="btn-entrar-texto">Entrar</span>
+                </button>
+                <p id="login-erro" role="status" aria-live="polite" class="text-red-600 dark:text-red-400 text-[11px] font-semibold mt-2 hidden text-center bg-red-50 dark:bg-red-950/45 border border-red-100 dark:border-red-900/30 p-2.5 rounded-lg"></p>
+            </form>
+        </div>
+        <footer class="absolute bottom-4 left-4 text-[11px] font-medium text-zinc-400 dark:text-zinc-500 select-none">
+            FluxLogView <span id="login-versao">Build 84</span>
+        </footer>
+    </div>
+
+    <!-- Container onde o app será injetado via JS -->
+    <div id="app-container"></div>
+
+
+    <!-- Templates de js/html/*.js agora são módulos ESM importados por js/app-html.js -->
+
+</body>
+</html>
